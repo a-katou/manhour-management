@@ -14,7 +14,8 @@ pip install django-cors-headers
 ```
 django-admin startproject manhour_management
 cd manhour_management
-python manage.py startapp manhour_management_rest
+python manage.py startapp manhour_management_database
+python manage.py startapp manhour_management_webapp
 ```
 
 # Database
