@@ -140,10 +140,39 @@ python manage.py showmigrations
 python manage.py migrate --fake manhour_rest_app zero
 ```
 
-# Django Admin
+# Django admin
 ```
 python manage.py createsuperuser
 admin/password
 ```
 
+# Angular app
+```
+cd D:\Projects\ManHourManagement\manhour_management
+ng new manhour-management-app --style less --routing
+ren manhour-management-app manhour_management_app
+cd manhour_management_app
+...
+Angular CLI: 10.2.3
+Node: 12.19.0
+OS: win32 x64
 
+Angular: 10.2.5
+... animations, common, compiler, compiler-cli, core, forms
+... platform-browser, platform-browser-dynamic, router
+Ivy Workspace: Yes
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1002.3
+@angular-devkit/build-angular   0.1002.3
+@angular-devkit/core            10.2.3
+@angular-devkit/schematics      10.2.3
+@angular/cli                    10.2.3
+@schematics/angular             10.2.3
+@schematics/update              0.1002.3
+rxjs                            6.6.7
+typescript                      4.0.8
+
+ng serve
+```
