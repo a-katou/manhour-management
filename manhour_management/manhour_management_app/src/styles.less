@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "ＭＳＰ ゴシック";
+    color: #333;
+    font-size: 14px;
+}
+html {
+    height: auto;
+    font-family: "ＭＳＰ ゴシック";
+    color: #333;
+    font-size: 14px;
+}
+//
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// position
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+// margin
+.ml-8px  { margin-left:  8px !important; }
+.ml-16px { margin-left: 16px !important; }
+.ml-24px { margin-left: 24px !important; }
+.ml-32px { margin-left: 32px !important; }
+.ml-40px { margin-left: 40px !important; }
+.ml-48px { margin-left: 48px !important; }
+.mr-8px  { margin-right:  8px !important; }
+.mr-16px { margin-right: 16px !important; }
+.mr-24px { margin-right: 24px !important; }
+.mr-32px { margin-right: 32px !important; }
+.mr-40px { margin-right: 40px !important; }
+.mr-48px { margin-right: 48px !important; }
+.mt-8px  { margin-top:  8px !important; }
+.mt-16px { margin-top: 16px !important; }
+.mt-24px { margin-top: 24px !important; }
+.mt-32px { margin-top: 32px !important; }
+.mt-40px { margin-top: 40px !important; }
+.mt-48px { margin-top: 48px !important; }
+.mb-8px  { margin-bottom:  8px !important; }
+.mb-16px { margin-bottom: 16px !important; }
+.mb-24px { margin-bottom: 24px !important; }
+.mb-32px { margin-bottom: 32px !important; }
+.mb-40px { margin-bottom: 40px !important; }
+.mb-48px { margin-bottom: 48px !important; }
+.mv-8px  { margin-top:  8px !important; margin-bottom:  8px !important; }
+.mv-16px { margin-top: 16px !important; margin-bottom: 16px !important; }
+.mv-24px { margin-top: 24px !important; margin-bottom: 24px !important; }
+.mv-32px { margin-top: 32px !important; margin-bottom: 32px !important; }
+.mv-40px { margin-top: 40px !important; margin-bottom: 40px !important; }
+.mv-48px { margin-top: 48px !important; margin-bottom: 48px !important; }
+.mh-8px  { margin-right:  8px !important; margin-left:  8px !important; }
+.mh-16px { margin-right: 16px !important; margin-left: 16px !important; }
+.mh-24px { margin-right: 24px !important; margin-left: 24px !important; }
+.mh-32px { margin-right: 32px !important; margin-left: 32px !important; }
+.mh-40px { margin-right: 40px !important; margin-left: 40px !important; }
+.mh-48px { margin-right: 48px !important; margin-left: 48px !important; }
+.mg-8px  { margin:  8px !important; }
+.mg-16px { margin: 16px !important; }
+.mg-24px { margin: 24px !important; }
+.mg-32px { margin: 32px !important; }
+.mg-40px { margin: 40px !important; }
+.mg-48px { margin: 48px !important; }
+
+// padding
+.pl-8px  { padding-left:  8px !important; }
+.pl-16px { padding-left: 16px !important; }
+.pl-24px { padding-left: 24px !important; }
+.pl-32px { padding-left: 32px !important; }
+.pl-40px { padding-left: 40px !important; }
+.pl-48px { padding-left: 48px !important; }
+.pr-8px  { padding-right:  8px !important; }
+.pr-16px { padding-right: 16px !important; }
+.pr-24px { padding-right: 24px !important; }
+.pr-32px { padding-right: 32px !important; }
+.pr-40px { padding-right: 40px !important; }
+.pr-48px { padding-right: 48px !important; }
+.pt-8px  { padding-top:  8px !important; }
+.pt-16px { padding-top: 16px !important; }
+.pt-24px { padding-top: 24px !important; }
+.pt-32px { padding-top: 32px !important; }
+.pt-40px { padding-top: 40px !important; }
+.pt-48px { padding-top: 48px !important; }
+.pb-8px  { padding-bottom:  8px !important; }
+.pb-16px { padding-bottom: 16px !important; }
+.pb-24px { padding-bottom: 24px !important; }
+.pb-32px { padding-bottom: 32px !important; }
+.pb-40px { padding-bottom: 40px !important; }
+.pb-48px { padding-bottom: 48px !important; }
+.pv-8px  { padding-top:  8px !important; padding-bottom:  8px !important; }
+.pv-16px { padding-top: 16px !important; padding-bottom: 16px !important; }
+.pv-24px { padding-top: 24px !important; padding-bottom: 24px !important; }
+.pv-32px { padding-top: 32px !important; padding-bottom: 32px !important; }
+.pv-40px { padding-top: 40px !important; padding-bottom: 40px !important; }
+.pv-48px { padding-top: 48px !important; padding-bottom: 48px !important; }
+.ph-8px  { padding-right:  8px !important; padding-left:  8px !important; }
+.ph-16px { padding-right: 16px !important; padding-left: 16px !important; }
+.ph-24px { padding-right: 24px !important; padding-left: 24px !important; }
+.ph-32px { padding-right: 32px !important; padding-left: 32px !important; }
+.ph-40px { padding-right: 40px !important; padding-left: 40px !important; }
+.ph-48px { padding-right: 48px !important; padding-left: 48px !important; }
+.pd-8px  { padding:  8px !important; }
+.pd-16px { padding: 16px !important; }
+.pd-24px { padding: 24px !important; }
+.pd-32px { padding: 32px !important; }
+.pd-40px { padding: 40px !important; }
+.pd-48px { padding: 48px !important; }
+.padding-8px { padding: 8px; }
+

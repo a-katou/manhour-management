@@ -1,0 +1,28 @@
+<div class="sidebar">
+  <utl-accordion openClass="fas fa-angle-down" closeClass="fas fa-angle-right" captionClass="menu-item">
+    <utl-accordion-panel caption="一般メニュー">
+      <div class="menu-item">
+        <a class="pl-24px" href="javascript:void(0)" (click)="router.navigateByUrl('manhour-detail')">作業票登録</a>
+      </div>
+      <div class="menu-item">
+        <a class="pl-24px" href="javascript:void(0)">作業票照会</a>
+      </div>
+      <utl-accordion-panel caption="サブメニュー" captionInnerClass="pl-24px">
+        <div class="menu-item">
+          <a class="pl-48px" href="javascript:void(0)">作業票登録</a>
+        </div>
+        <div class="menu-item">
+          <a class="pl-48px" href="javascript:void(0)">作業票照会</a>
+        </div>
+      </utl-accordion-panel>
+    </utl-accordion-panel>
+    <utl-accordion-panel caption="管理メニュー">
+      <div class="menu-item">
+        <a class="pl-24px" href="javascript:void(0)" (click)="router.navigateByUrl('users')">ユーザ管理</a>
+      </div>
+      <div class="menu-item">
+        <a class="pl-24px" href="javascript:void(0)">作番管理</a>
+      </div>
+    </utl-accordion-panel>
+  </utl-accordion>
+</div>

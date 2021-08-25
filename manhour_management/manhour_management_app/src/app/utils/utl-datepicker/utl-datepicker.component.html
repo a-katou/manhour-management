@@ -1,0 +1,32 @@
+<div class="datepicker">
+  <input [(ngModel)]="value" (focus)="onClick($event)" (input)="onInput($event)" />
+  <div class="datepicker-panel" *ngIf="state" [@datepicker]>
+    <div class="datepicker-control">
+      <table>
+        <tr>
+          <th>日</th>
+          <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+          <th>土</th>
+        </tr>
+        <ng-container *ngFor="let week of dates">
+          <tr>
+            <ng-container *ngFor="let date of week">
+              <ng-container *ngIf="date === null">
+                <td></td>
+              </ng-container>
+              <ng-container *ngIf="date !== null">
+                <td style="text-align: right;">
+                  <a href="javascript:void(0)" (click)="onDateClicked(date)">{{date.getDate()}}</a>
+                </td>
+              </ng-container>
+            </ng-container>
+          </tr>
+        </ng-container>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="tabs">
+  <ul>
+    <ng-container *ngFor="let tab of tabs">
+      <li [class.active]="tab.isActive"><a href="javascript:void(0)" (click)="onTabClicked(tab)">{{tab.caption}}</a></li>
+    </ng-container>
+  </ul>
+</div>
+<div class="tab-container">
+  <ng-content></ng-content>
+</div>

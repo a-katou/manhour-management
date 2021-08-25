@@ -1,0 +1,8 @@
+<div [class]="options.captionClass">
+  <a href="javascript:void(0)" (click)="toggle()" [class]="captionInnerClass">
+    <ng-container *ngIf="iconClass"><i [class]="iconClass"></i></ng-container>{{caption}}
+  </a>
+</div>
+<div [@accordion]="state">
+  <ng-content></ng-content>
+</div>

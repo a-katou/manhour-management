@@ -1,0 +1,27 @@
+.datepicker {
+    display: inline-block;
+    position: relative;
+
+    .datepicker-panel {
+        position: absolute;
+        bottom: 0;
+        .datepicker-control {
+            background: #fff;
+            color: #000;
+            padding: 8px;
+            position: absolute;
+            top: 4px;
+            filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.3));
+
+            &::before{
+                content: '';
+                display:block;
+                border-bottom: solid 8px #fff;
+                border-left : solid 6px transparent;
+                border-right: solid 6px transparent;
+                position: absolute;
+                top: -8px;
+            }
+        }
+    }
+}

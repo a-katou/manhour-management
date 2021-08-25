@@ -1,0 +1,42 @@
+// sidebar
+@sidebar_height: 40px;
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    //box-shadow: 4px 0px 4px -4px rgba(0,0,0,0.3);
+    border-right: 1px solid #ccc;
+    .menu-item {
+        a {
+            position: relative;
+            display: block;
+            line-height: @sidebar_height;
+            text-decoration: none;
+            font-weight: bold;
+            padding-left: 8px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 3%;
+                width: 94%;
+                height: 1px;
+                background:#8e24aa;
+                transition: all .3s;
+                transform: scale(0, 1);
+                transform-origin: center top;
+            }
+            &:hover {
+                &::after {
+                    transform: scale(1, 1);
+                }
+            }
+            i {
+                display: inline-block;
+                width: 16px;
+            }
+        }
+
+    }
+}

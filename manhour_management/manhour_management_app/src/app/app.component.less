@@ -1,0 +1,70 @@
+:host { // 本来はbodyに設定するスタイル
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-flow: column;
+    overflow-y: scroll;
+    position: relative;
+
+}
+#header nav {
+    display: flex;
+    align-items: stretch;
+    min-height: 40px;
+    width: 100%;
+    background-color: #8e24aa;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
+    position: relative;
+    * {
+        color: #fff;
+    }
+    .header-column {
+        display: flex;
+        align-items: center;
+
+        .btn-icon {
+            background:none;
+            border: none;
+            height: 40px;
+            width: 40px;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+#body {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+    flex: 1;
+
+    #container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        section#content {
+            height: 100%;
+        }
+    }
+
+    #breadcrumbs {
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+
+        i {
+            display: inline-block;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    #footer {
+        background-color: #ddd;
+        min-height: 24px;
+    }
+}
